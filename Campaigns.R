@@ -9,4 +9,4 @@ campaign$delivery_date <- as.Date(campaign$delivery_date, "%m/%d/%Y")
 #This particular piece of code below removes the march, 2017 campaign data for regression analysis
 #purposes
 campaigns_no_march <- campaign[campaign$delivery_date < "2017-03-01",]
-campaigns_no_march <- droplevels(campaigns_no_march)
+campaigns_no_march <- droplevels(campaigns_no_march) 
